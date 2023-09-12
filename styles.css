@@ -1,0 +1,94 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body {
+    background-color: rgb(180, 255, 240);
+}
+/* Basic styling for the header */
+header {
+    background-color: #a200ff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the navigation menu */
+nav {
+    background-color: #ff8000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    transition: transform 3s;
+}
+
+.logo:hover {
+    transform: scale(5) rotate(10800deg);
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Style the footer */
+/* Add keyframes for the rainbow background animation */
+@keyframes rainbow-bg {
+    0% {
+        background: linear-gradient(45deg, red, orange);
+    }
+    16.67% {
+        background: linear-gradient(45deg, orange, yellow);
+    }
+    33.33% {
+        background: linear-gradient(45deg, yellow, green);
+    }
+    50% {
+        background: linear-gradient(45deg, green, blue);
+    }
+    66.67% {
+        background: linear-gradient(45deg, blue, indigo);
+    }
+    83.33% {
+        background: linear-gradient(45deg, indigo, violet);
+    }
+    100% {
+        background: linear-gradient(45deg, violet, red);
+    }
+}
+
+/* Apply the animation to the footer */
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    animation: rainbow-bg 5s linear infinite;
+}
